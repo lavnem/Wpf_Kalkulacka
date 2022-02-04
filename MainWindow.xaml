@@ -23,26 +23,26 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Button Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2">0</Button>
-        <Button Grid.Column="0" Grid.Row="4">1</Button>
-        <Button Grid.Column="1" Grid.Row="4">2</Button>
-        <Button Grid.Column="2" Grid.Row="4">3</Button>
-        <Button Grid.Column="0" Grid.Row="3">4</Button>
-        <Button Grid.Column="1" Grid.Row="3">5</Button>
-        <Button Grid.Column="2" Grid.Row="3">6</Button>
-        <Button Grid.Column="0" Grid.Row="2">7</Button>
-        <Button Grid.Column="1" Grid.Row="2">8</Button>
-        <Button Grid.Column="2" Grid.Row="2">9</Button>
+        <Button x:Name="btn0" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2">0</Button>
+        <Button x:Name="btn1" Grid.Column="0" Grid.Row="4">1</Button>
+        <Button x:Name="btn2" Grid.Column="1" Grid.Row="4">2</Button>
+        <Button x:Name="btn3" Grid.Column="2" Grid.Row="4">3</Button>
+        <Button x:Name="btn4" Grid.Column="0" Grid.Row="3">4</Button>
+        <Button x:Name="btn5" Grid.Column="1" Grid.Row="3">5</Button>
+        <Button x:Name="btn6" Grid.Column="2" Grid.Row="3">6</Button>
+        <Button x:Name="btn7" Grid.Column="0" Grid.Row="2">7</Button>
+        <Button x:Name="btn8" Grid.Column="1" Grid.Row="2">8</Button>
+        <Button x:Name="btn9" Grid.Column="2" Grid.Row="2">9</Button>
 
-        <Button Grid.Column="3" Grid.Row="4" Grid.RowSpan="2">+</Button>
-        <Button Grid.Column="3" Grid.Row="3">-</Button>
-        <Button Grid.Column="2" Grid.Row="1">*</Button>
-        <Button Grid.Column="1" Grid.Row="1">/</Button>
+        <Button x:Name="btn_plus" Grid.Column="3" Grid.Row="4" Grid.RowSpan="2">+</Button>
+        <Button x:Name="btn_minus" Grid.Column="3" Grid.Row="3">-</Button>
+        <Button x:Name="btn_krat" Grid.Column="2" Grid.Row="1">*</Button>
+        <Button x:Name="btn_deleno" Grid.Column="1" Grid.Row="1">/</Button>
 
-        <Button Grid.Column="3" Grid.Row="1">←</Button>
-        <Button Grid.Column="3" Grid.Row="2">=</Button>
-        <Button Grid.Column="2" Grid.Row="5">.</Button>
-        <Button Grid.Column="0" Grid.Row="1">AC</Button>
+        <Button x:Name="btn_bckspc" Grid.Column="3" Grid.Row="1">←</Button>
+        <Button x:Name="btn_rovno" Grid.Column="3" Grid.Row="2">=</Button>
+        <Button x:Name="btn_carka" Grid.Column="2" Grid.Row="5">.</Button>
+        <Button x:Name="btn_ac" Grid.Column="0" Grid.Row="1">AC</Button>
 
         <TextBox IsReadOnly="True"
                  Grid.Row="0"
