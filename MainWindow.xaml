@@ -4,8 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_Kalkulacka"
-        mc:Ignorable="d"
-        Title="Kalkulačka" Height="450" Width="325">
+        mc:Ignorable="d" 
+        Title="Kalkulačka" Height="450" Width="325" Background="#000033">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -23,35 +23,37 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Button x:Name="btn0" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2">0</Button>
-        <Button x:Name="btn1" Grid.Column="0" Grid.Row="4">1</Button>
-        <Button x:Name="btn2" Grid.Column="1" Grid.Row="4">2</Button>
-        <Button x:Name="btn3" Grid.Column="2" Grid.Row="4">3</Button>
-        <Button x:Name="btn4" Grid.Column="0" Grid.Row="3">4</Button>
-        <Button x:Name="btn5" Grid.Column="1" Grid.Row="3">5</Button>
-        <Button x:Name="btn6" Grid.Column="2" Grid.Row="3">6</Button>
-        <Button x:Name="btn7" Grid.Column="0" Grid.Row="2">7</Button>
-        <Button x:Name="btn8" Grid.Column="1" Grid.Row="2">8</Button>
-        <Button x:Name="btn9" Grid.Column="2" Grid.Row="2">9</Button>
+        <Button x:Name="btn0" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" Click="btn0_Click" Background="#000033" Foreground="#FFFF">0</Button>
+        <Button x:Name="btn1" Grid.Column="0" Grid.Row="4" Click="btn1_Click" Background="#000033" Foreground="#FFFFFF">1</Button>
+        <Button x:Name="btn2" Grid.Column="1" Grid.Row="4" Click="btn2_Click" Background="#000033" Foreground="#FFFFFF">2</Button>
+        <Button x:Name="btn3" Grid.Column="2" Grid.Row="4" Click="btn3_Click" Background="#000033" Foreground="#FFFFFF">3</Button>
+        <Button x:Name="btn4" Grid.Column="0" Grid.Row="3" Click="btn4_Click" Background="#000033" Foreground="#FFFFFF">4</Button>
+        <Button x:Name="btn5" Grid.Column="1" Grid.Row="3" Click="btn5_Click" Background="#000033" Foreground="#FFFFFF">5</Button>
+        <Button x:Name="btn6" Grid.Column="2" Grid.Row="3" Click="btn6_Click" Background="#000033" Foreground="#FFFFFF">6</Button>
+        <Button x:Name="btn7" Grid.Column="0" Grid.Row="2" Click="btn7_Click" Background="#000033" Foreground="#FFFFFF">7</Button>
+        <Button x:Name="btn8" Grid.Column="1" Grid.Row="2" Click="btn8_Click" Background="#000033" Foreground="#FFFFFF">8</Button>
+        <Button x:Name="btn9" Grid.Column="2" Grid.Row="2" Click="btn9_Click" Background="#000033" Foreground="#FFFFFF">9</Button>
 
-        <Button x:Name="btn_plus" Grid.Column="3" Grid.Row="4" Grid.RowSpan="2">+</Button>
-        <Button x:Name="btn_minus" Grid.Column="3" Grid.Row="3">-</Button>
-        <Button x:Name="btn_krat" Grid.Column="2" Grid.Row="1">*</Button>
-        <Button x:Name="btn_deleno" Grid.Column="1" Grid.Row="1">/</Button>
+        <Button x:Name="btn_plus" Grid.Column="3" Grid.Row="4" Grid.RowSpan="2" Click="btn_plus_Click" Background="#000033" Foreground="#FFFFFF">+</Button>
+        <Button x:Name="btn_minus" Grid.Column="3" Grid.Row="3" Click="btn_minus_Click" Background="#000033" Foreground="#FFFFFF">-</Button>
+        <Button x:Name="btn_krat" Grid.Column="2" Grid.Row="1" Click="btn_krat_Click" Background="#000033" Foreground="#FFFFFF">*</Button>
+        <Button x:Name="btn_deleno" Grid.Column="2" Grid.Row="5" Click="btn_deleno_Click" Background="#000033" Foreground="#FFFFFF">/</Button>
 
-        <Button x:Name="btn_bckspc" Grid.Column="3" Grid.Row="1">←</Button>
-        <Button x:Name="btn_rovno" Grid.Column="3" Grid.Row="2">=</Button>
-        <Button x:Name="btn_carka" Grid.Column="2" Grid.Row="5">.</Button>
-        <Button x:Name="btn_ac" Grid.Column="0" Grid.Row="1">AC</Button>
+        <Button x:Name="btn_back" Grid.Column="3" Grid.Row="1" Click="btn_back_Click" Background="#000033" Foreground="#FFFFFF">←</Button>
+        <Button x:Name="btn_rovno" Grid.Column="3" Grid.Row="2" Click="btn_rovno_Click" Background="#000033" Foreground="#FFFFFF">=</Button>
+        <Button x:Name="btn_c" Grid.Column="1" Grid.Row="1" Click="btn_c_Click" Background="#000033" Foreground="#FFFFFF">C</Button>
+        <Button x:Name="btn_ce" Grid.Column="0" Grid.Row="1" Click="btn_ce_Click" Background="#000033" Foreground="#FFFFFF">CE</Button>
 
-        <TextBox IsReadOnly="True"
+        <TextBox x:Name="Displej"
+                 IsReadOnly="True"
+                 Text="0"
                  Grid.Row="0"
                  Grid.Column="0"
                  Grid.ColumnSpan="4"
                  TextAlignment="Right"
                  VerticalAlignment="Bottom"
-                 FontSize="50">
-            0
-        </TextBox>
+                 FontSize="50"
+                 Foreground="#FFFFFF"
+                 Background="#000033"/>
     </Grid>
 </Window>
