@@ -22,6 +22,7 @@ namespace Wpf_Kalkulacka
     {
         long cislo1 = 0;
         long cislo2 = 0;
+        double vysledek = 0.0;
         string operace = "";
 
 
@@ -199,16 +200,20 @@ namespace Wpf_Kalkulacka
             switch (operace)
             {
                 case "+":
-                    Displej.Text = (cislo1 + cislo2).ToString();
+                    vysledek = cislo1 + cislo2;
+                    Displej.Text = vysledek.ToString();
                     break;
                 case "-":
-                    Displej.Text = (cislo1 - cislo2).ToString();
+                    vysledek = cislo1 - cislo2;
+                    Displej.Text = vysledek.ToString();
                     break;
                 case "*":
-                    Displej.Text = (cislo1 * cislo2).ToString();
+                    vysledek = cislo1 * cislo2;
+                    Displej.Text = vysledek.ToString();
                     break;
                 case "/":
-                    Displej.Text = (cislo1 / cislo2).ToString();
+                    vysledek = (double)cislo1 / cislo2;
+                    Displej.Text = vysledek.ToString("#.##");
                     break;
             }
             cislo1 = 0;
